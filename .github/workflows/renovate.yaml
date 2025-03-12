@@ -6,6 +6,10 @@ on:
         required: false
         type: string
         default: ""
+    secrets:
+      token:  # 👈 Accept token from calling workflow
+        description: "GitHub Token"
+        required: true
 permissions:
   contents: read
   id-token: write
@@ -29,4 +33,4 @@ jobs:
         #RENOVATE_TOKEN: ${{ secrets.RENOVATE_PAT }}
       with:
         #configurationFile: renovate.json
-        token: ${{ secrets.RENOVATE_TOKEN }}
+        token: ${{ secrets.token }}
