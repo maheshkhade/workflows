@@ -8,7 +8,7 @@ on:
         default: ""
     secrets:
       token:  # 👈 Accept token from calling workflow
-        description: "GitHub Token"
+        description: "Renovate Token"
         required: true
 permissions:
   contents: read
