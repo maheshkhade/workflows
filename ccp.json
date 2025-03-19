@@ -6,15 +6,12 @@
   "enabledManagers": [
     "dockerfile"
   ],
-  "dockerfile": {
-    "enabled": true,
-    "fileMatch": [
-      "^Dockerfile$"
-    ],
-    "groupName": "docker",
-    "pinDigests": false
-  },
-  "vulnerabilityAlerts": {
-    "enabled": true
-  }
+  "packageRules": [
+    {
+      "description": "docker file description",
+      "groupName": "Dockerfile group name",
+      "groupSlug": "Docker file groupSlug",
+      "matchManagers": ["dockerfile"]
+    }
+  ]
 }
