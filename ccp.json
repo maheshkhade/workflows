@@ -6,6 +6,7 @@
   "enabledManagers": [
     "dockerfile"
   ],
+  "recreateClosed": true,
   "packageRules": [
     {
       "description": "docker file description",
