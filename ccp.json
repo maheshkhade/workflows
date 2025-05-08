@@ -9,6 +9,7 @@
   "packageRules": [
     {
       "description": "docker file description",
+      "labels": ["myLabel"]
       "groupName": "Dockerfile group name",
       "groupSlug": "Docker file groupSlug",
       "matchManagers": ["dockerfile"]
