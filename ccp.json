@@ -8,7 +8,7 @@
   ],
   "recreateClosed": true,
   "prHourlyLimit": 10,
-  "labels": ["myLabel"]
+  "labels": ["myLabel"],
   "packageRules": [
     {
       "description": "docker file description",
